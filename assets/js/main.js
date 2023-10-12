@@ -11,40 +11,40 @@
 	function inti_product_summary(){
 		var product_summary = [{
 			'sub-title': 'New Products',
-			'title': 'Cute Spotlight',
+			'title': 'New Products',
 			'summary': 'The introduction text of this spotlight briefly introduces the parameters related to the spotlight such as brightness, color gamut, etc.',
 			'button': {
 				'link': '#',
 				'title': 'Lean More'
 			},
-			'image': 'assets/images/lights/7-2.png'
+			'image': 'assets/images/lights/LED DOWN LIGHT.png'
 		},{
 			'sub-title': 'New Products',
-			'title': 'Simple Downlight',
+			'title': 'New Products',
 			'summary': 'This downlight is very large, long life, strong brightness, suitable for parks, shopping malls and other public areas.',
 			'button': {
 				'link': '#',
 				'title': 'Lean More'
 			},
-			'image': 'assets/images/lights/8-1.png'
+			'image': 'assets/images/lights/LED DOWN LIGHT-1.png'
 		},{
 			'sub-title': 'New Products',
-			'title': 'Household Lamps',
+			'title': 'New Products',
 			'summary': 'Spotlights are mainly used indoors during home decoration, and can usually effectively create an atmosphere.',
 			'button': {
 				'link': '#',
 				'title': 'Lean More'
 			},
-			'image': 'assets/images/lights/10.png'
+			'image': 'assets/images/lights/LED SLIM PANEL LIGHT.png'
 		},{
 			'sub-title': 'New Products',
-			'title': 'Stage Lights',
+			'title': 'New Products',
 			'summary': 'Stage lights usually require lights that are rich in color and can change in time with the music.',
 			'button': {
 				'link': '#',
 				'title': 'Lean More'
 			},
-			'image': 'assets/images/lights/1-1.png'
+			'image': 'assets/images/lights/LED SURFACE LIGHT.png'
 		}];
 		var html = '';
 		for(var key in product_summary){			
@@ -53,18 +53,18 @@
 			html += '		<div class="row">';
 			html += '			<div class="col-xl-6 col-lg-7 col-md-7 col-sm-7 align-self-center">';
 			html += '				<div class="hero-slide-content slider-animated-1">';
-			html += '					<span class="category">';
+			html += '					<!-- <span class="category">';
 			html += '					' + product_summary[key]['sub-title'];
-			html += '					</span>';
+			html += '					</span> -->';
 			html += '					<h2 class="title-1">';
 			html += '					' + product_summary[key]['title'];
 			html += '					</h2>';
-			html += '					<p>';
+			html += '					<!-- <p>';
 			html += '					' +  product_summary[key]['summary'];
 			html += '					</p>';
 			html += '					<a href="' + product_summary[key]['button']['link'] +'" class="btn btn-lg btn-primary btn-hover-dark mt-5">';
 			html += '					' + product_summary[key]['button']['title'];
-			html += '					</a>';
+			html += '					</a>-->';
 			html += '				</div>';
 			html += '			</div>';
 			html += '			<div class="col-xl-6 col-lg-5 col-md-5 col-sm-5">';
@@ -84,142 +84,175 @@
 	// 填充产品信息
 	function init_products() {
 		var products = {
-			'title': 'Best Lights',
+			'title': 'Led Down Light',
 			'description': 'We provide you with a variety of lighting options, please contact us for customization',
 			'categories': [{
-				'title': 'New Arrivals',
+				'title': 'LED Panel Light',
 				'id': guid(),
 				'items': [{
 					'new': true,
-					'discount': '10',
-					'id': guid(),
-					'title': 'Model 1',
-					'price': '$22.11',
-					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/1-1.png']
-				},{
-					'new': false,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 2',
+					'title': 'A',
+					'price': '$22.11',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Panel-1.png']
+				},{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'B',
 					'price': '$20.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/1-2.png']
+					'images': ['assets/images/lights/Panel-2.png']
 				},{
 					'new': true,		
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 3',
+					'title': 'C',
 					'price': '$11.33',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/2-1-1.png']
+					'images': ['assets/images/lights/Panel-3.png']
 				},{
-					'new': false,
+					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 4',
+					'title': 'D',
 					'price': '$12.11',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/2-1.png']
+					'images': ['assets/images/lights/Panel-4.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 5',
+					'title': 'E',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/2-2-1.png']
+					'images': ['assets/images/lights/Panel-5.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 6',
-					'price': '$45.16',
-					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/2-2.png']
-				},{
-					'new': false,
-					'discount': '0',
-					'id': guid(),
-					'title': 'Model 7',
+					'title': 'G',
 					'price': '$77.89',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/3-1.png']
+					'images': ['assets/images/lights/Panel-6.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 8',
+					'title': 'H',
 					'price': '$23.45',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/3-2.png']
+					'images': ['assets/images/lights/Panel-7.png']
 				}]
 			},{
-				'title': 'Best Sellers',
+				'title': 'LED COB Spot Light',
 				'id': guid(),
 				'items': [{
-					'new': false,
-					'discount': '10',
+					'new': true,
+					'discount': '0',
 					'id': guid(),
-					'title': 'Model 9',
+					'title': 'A',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/4-1.png']
+					'images': ['assets/images/lights/COB-1.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 10',
+					'title': 'B',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/4-2.png']
+					'images': ['assets/images/lights/COB-2.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 11',
+					'title': 'C',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/5-1-1.png']
-				},{
-					'new': true,
-					'discount': '15',
-					'id': guid(),
-					'title': 'Model 12',
-					'price': '$18.90',
-					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/5-2-1.png']
+					'images': ['assets/images/lights/COB-3.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 13',
+					'title': 'D',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/5-2.png']
-				},{
-					'new': false,
-					'discount': '20',
+					'images': ['assets/images/lights/COB-4.png']
+				}]
+			},{
+				'title': 'LED Track Light',
+				'id': guid(),
+				'items': [{
+					'new': true,
+					'discount': '0',
 					'id': guid(),
-					'title': 'Model 14',
+					'title': 'A',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/6-1.png']
+					'images': ['assets/images/lights/Track-1.png']
 				},{
 					'new': true,
 					'discount': '0',
 					'id': guid(),
-					'title': 'Model 15',
+					'title': 'B',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/7-1.png']
+					'images': ['assets/images/lights/Track-2.png']
 				},{
 					'new': true,
 					'discount': '0',
-					'title': 'Model 16',
+					'id': guid(),
+					'title': 'C',
 					'price': '$18.90',
 					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
-					'images': ['assets/images/lights/7-2.png']
+					'images': ['assets/images/lights/Track-3.png']
+				},{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'D',
+					'price': '$18.90',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Track-4.png']
+				}]
+			},{
+				'title': 'LED Surface Light',
+				'id': guid(),
+				'items': [{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'A',
+					'price': '$18.90',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Surface-1.png']
+				},{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'B',
+					'price': '$18.90',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Surface-2.png']
+				},{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'C',
+					'price': '$18.90',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Surface-3.png']
+				},{
+					'new': true,
+					'discount': '0',
+					'id': guid(),
+					'title': 'D',
+					'price': '$18.90',
+					'description': 'Lorem ipsum dolor sit amet, consectetur adipisic elit eiusm tempor incidid ut labore et dolore magna aliqua. Ut enim ad minim venialo quis nostrud exercitation ullamco',
+					'images': ['assets/images/lights/Surface-4.png']
 				}]
 			}]			
 		};
@@ -269,7 +302,7 @@
 				// items_html += '			<button title="More" class=" add-to-cart">More</button>';
 				items_html += '			';
 				items_html += '		</div>';
-				items_html += '		<div class="content"><h5 class="title"><a class="quickview">' + items[k]['title'] + '</a></h5><span class="price"><span class="new">'+items[k]['price']+'</span> </span> </div>'
+				items_html += '		<div class="content"><h5 class="title"><a class="quickview">' + items[k]['title'] + '</a></h5><!--<span class="price"><span class="new">'+items[k]['price']+'</span> </span> --></div>'
 				items_html += '	</div>';
 				items_html += '</div>';					
 			}
